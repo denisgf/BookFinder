@@ -1,0 +1,25 @@
+﻿@model BookFinder.Utils.Volume
+
+<div>
+    <h1>Title</h1>
+    @Model.VolumeInfo.Title
+    <hr />
+    <h1>Authors</h1>
+    @if(Model.VolumeInfo.Authors != null)
+    {
+        foreach(var author in Model.VolumeInfo.Authors)
+        {
+            @author
+        }
+    }        
+    <hr />
+    <h1>Description</h1>
+    @Model.VolumeInfo.Description
+    <hr />
+    <h1>Preview</h1>
+    <a href="@Model.VolumeInfo.PreviewLink">
+        @Model.VolumeInfo.PreviewLink
+    </a>
+     
+    <hr />
+</div>

@@ -1,0 +1,19 @@
+﻿@model SearchOptionsViewModel
+
+<div>
+    <p>Search by key word</p>
+</div>
+<div class="options">
+    <form asp-action="ShowResults">
+        <div>
+            <input asp-for="QueryText" type="search" />
+        </div>
+        
+        <div class="button">
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+</div>
+<div>
+    <a href="#">Advanced Search</a>
+</div>

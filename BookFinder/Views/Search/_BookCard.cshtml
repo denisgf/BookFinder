@@ -1,0 +1,25 @@
+﻿@model BookFinder.Utils.Volume
+
+<div>
+    <div class="img-thumbnail">
+        <a href="@Model.VolumeInfo.PreviewLink">
+            @if (Model.VolumeInfo.ImageLinks != null)
+            {
+                <img src="@Model.VolumeInfo.ImageLinks.SmallThumbnail" alt="" />
+            }
+        </a>
+    </div>
+    <div >
+        <a asp-action="Details" asp-route-volumeId="@Model.VolumeId">
+            @Model.VolumeInfo.Title
+        </a>
+        @if (Model.VolumeInfo.Authors != null)
+        {
+            @foreach (var author in Model.VolumeInfo.Authors)
+            {
+                <p>@author</p>
+            }
+        }
+    </div>
+
+</div>

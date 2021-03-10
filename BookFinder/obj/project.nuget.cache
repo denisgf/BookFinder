@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0cdJXw+sqZboVlMRgnp+4bQqId6JOUb0yXENAgKu9R7cFwB3dFKB/EfWbnrGIp+SaKEaIdePfbwuKGLVK0VT9A==",
+  "success": true,
+  "projectFilePath": "C:\\DEV\\VS 2019 Projects\\BookFinder\\BookFinder\\BookFinder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dgarcia.SIAACCESS.000\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

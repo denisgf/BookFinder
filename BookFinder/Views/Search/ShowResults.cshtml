@@ -1,0 +1,19 @@
+﻿@model QueryCollectionViewModel
+<div>
+    <h1>Results here...</h1>
+    <h4>Total: @Model.QueryCollection.TotalItems</h4>
+</div>
+<div>
+    @*<a href="@Model.QueryCollection.Volumes[0].VolumeInfo.ImageLinks.Thumbnail">
+        <img src="@Model.QueryCollection.Volumes[0].VolumeInfo.ImageLinks.SmallThumbnail" />
+    </a>*@
+
+    @foreach(var volume in Model.QueryCollection.Volumes)
+    {
+        <partial name="_BookCard" model="volume" />
+    }
+</div>
+
+<div>
+    @await Component.InvokeAsync("NavigationPages", Model.NavigationPagesViewModel)
+</div>
